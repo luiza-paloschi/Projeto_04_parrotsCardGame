@@ -33,3 +33,52 @@ body{
     gap: 34px;
 }
 
+.card{
+    width: 117px;
+    height: 146px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+    transform-style: preserve-3d; 
+}
+
+.front-face,
+.back-face {
+    background-color: #A7E9AF;
+    box-sizing: border-box;
+    border: 1px solid #99CEA8;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front-face {
+    z-index: 2;
+    transform: rotateY(0deg);
+    
+}
+
+.back-face {
+    transform: rotateY(180deg);
+    animation-duration: 3s; 
+    animation-timing-function: linear; 
+    animation-delay: 0.3s; 
+    animation-iteration-count: infinite; 
+    animation-direction: alternate;
+}
+
+.flipped {
+    transform: rotateY(180deg);
+}
+
+img{
+    width:100px;
+    height: 100px;
+}
