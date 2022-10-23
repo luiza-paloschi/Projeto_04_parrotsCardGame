@@ -1,5 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
 
+@keyframes arcoIris {
+    0% {
+        background-color: rgba(251, 7, 217, 1); 
+    }
+    10%{
+        background-color: rgba(255, 0, 0, 1);
+    }
+    20%{
+        background-color: rgba(255, 154, 0, 1); 
+    }30%{
+        background-color: rgba(208, 222, 33, 1);
+    }
+    40%{
+        background-color:  rgba(79, 220, 74, 1);
+    }
+    50%{
+        background-color:  rgba(63, 218, 216, 1);
+    }
+    60%{
+        background-color: rgba(47, 201, 226, 1);
+    }
+    70%{
+        background-color: rgba(28, 127, 238, 1);
+    }
+    80%{
+        background-color:  rgba(95, 21, 242, 1);
+    }
+    90%{
+        background-color:  rgba(186, 12, 248, 1);
+    }
+    100%{
+        background-color:  rgba(251, 7, 217, 1);
+    }
+}
+
 body{
     background-color: #EEF9BF;
     display: flex;
@@ -40,6 +75,9 @@ body{
     cursor: pointer;
     transition: 0.5s;
     transform-style: preserve-3d; 
+}
+.rainbow {
+    animation-name: arcoIris;
 }
 
 .front-face,
