@@ -114,7 +114,7 @@ img{
     height: 100px;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 900px){
     .cards {
         width:42%;
         max-height: 100%;

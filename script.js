@@ -24,6 +24,7 @@ for (let i = 1; i <= (metade); i++){
     lista.push(i);
 }
 lista = lista.concat(lista);
+
 lista.sort(embaralhar); // Embaralhar array
 
 let contador = 0;
@@ -43,13 +44,15 @@ function flipCard(clicado){
         return;
     }
 
+
     jogadas++;
-    clicado.classList.add('flipped');   
     if(carta[0]==undefined){
         carta.push(clicado);
+        clicado.classList.add('flipped');  
         carta1 = carta[0].innerHTML;
     } else if(carta[1]==undefined){
-        carta.push(clicado);
+       carta.push(clicado);
+       clicado.classList.add('flipped');  
         carta2 = carta[1].innerHTML;
         compareCards(carta1, carta2);
 
